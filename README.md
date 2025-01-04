@@ -1,95 +1,132 @@
 # GPA Calc
 
-A modern, responsive web application for calculating and planning your Grade Point Average (GPA). Try it live at [GPA Calc](https://omar7001-b.github.io/gpa-calc/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://omar7001-b.github.io/gpa-calc/)
+[![GitHub issues](https://img.shields.io/github/issues/Omar7001-B/gpa-calc)](https://github.com/Omar7001-B/gpa-calc/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Omar7001-B/gpa-calc)](https://github.com/Omar7001-B/gpa-calc/stargazers)
 
-![GPA Calculator Preview](assets/icon.svg)
+<div align="center">
+  <img src="assets/icon.svg" alt="GPA Calculator Logo" width="200"/>
+  <h3>A Modern GPA Calculator & Academic Planning Tool</h3>
+  <p>Calculate your current GPA and plan your academic goals with this intuitive web application.</p>
+</div>
 
-## Features
+[View Demo](https://omar7001-b.github.io/gpa-calc/) • [Report Bug](https://github.com/Omar7001-B/gpa-calc/issues) • [Request Feature](https://github.com/Omar7001-B/gpa-calc/issues)
 
-### 1. GPA Calculator
-- Calculate your current GPA by entering course information
-- Dynamic addition and removal of courses
-- Support for standard letter grades (A to F)
-- Automatic GPA computation based on credit hours and grades
-- Real-time calculations
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Usage Guide](#usage-guide)
+- [Browser Support](#browser-support)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### 2. GPA Target Calculator
-- Calculate the required GPA for future courses
-- Input your current GPA and credits
-- Set target cumulative GPA
-- Determine the GPA needed in upcoming courses
-- Instant feedback on required performance
+## 🎯 Overview
 
-### 3. User Interface
-- Clean, modern design
-- Responsive layout for all devices
-- Interactive navigation with browser history support
-- Real-time form validation
-- Reference grading scale table
-- Intuitive course management
+GPA Calc is a comprehensive web application designed to help students track and plan their academic performance. With its intuitive interface and real-time calculations, students can easily:
+- Calculate their current GPA
+- Plan future academic goals
+- Track credit hours
+- Determine required performance for target GPAs
 
-## Technologies Used
-- HTML5
-- CSS3 (with CSS Variables for theming)
-- Vanilla JavaScript (ES6+)
-- SVG for icons
-- Responsive Design
-- Mobile-First Approach
+## ✨ Features
 
-## Live Demo
-Visit the live application: [GPA Calc](https://omar7001-b.github.io/gpa-calc/)
+### GPA Calculator
+- 🔢 Real-time GPA computation
+- ➕ Dynamic course management
+- 📝 Support for standard letter grades (A to F)
+- 🔄 Automatic calculations based on credit hours
+- 💾 Browser history support for easy navigation
 
-## Getting Started
+### Target GPA Planner
+- 🎯 Calculate required future performance
+- 📊 Credit hour planning
+- 🔍 Instant feedback on goals
+- 📈 Academic progress tracking
+
+### User Experience
+- 🎨 Clean, modern interface
+- 📱 Fully responsive design
+- ⚡ Real-time validation
+- 📑 Reference grading scale
+- 🖱️ Intuitive navigation
+
+## 🛠️ Tech Stack
+
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+- ![SVG](https://img.shields.io/badge/SVG-FFB13B?style=flat&logo=svg&logoColor=black)
+
+## 🚀 Getting Started
 
 1. Clone the repository:
+```bash
+git clone https://github.com/Omar7001-B/gpa-calc.git
+cd gpa-calc
+```
 
-    ```bash
-    git clone https://github.com/Omar7001-B/gpa-calc.git
-    cd gpa-calc
-    ```
+2. Open `index.html` in your preferred browser
 
-2. Open `index.html` in your web browser
+No build process or dependencies required - it just works!
 
-No additional setup or dependencies required!
+## 📖 Usage Guide
 
-## Usage
+### Current GPA Calculation
+1. Navigate to "GPA Calculator"
+2. Input your courses:
+   ```
+   Course Name (optional)
+   Credit Hours
+   Grade Received
+   ```
+3. Add more courses as needed
+4. View your calculated GPA instantly
 
-### Calculating Current GPA
-1. Navigate to the "GPA Calculator" section
-2. Enter your course information:
-   - Course name (optional)
-   - Credit hours
-   - Grade received
-3. Add more courses using the "Add Course" button
-4. Click "Calculate GPA" to see your GPA
+### Target GPA Planning
+1. Go to "GPA Target Calculator"
+2. Enter your academic data:
+   ```
+   Current GPA
+   Total Credits
+   Target GPA
+   Planned Credits
+   ```
+3. Get instant feedback on required performance
 
-### Planning Target GPA
-1. Navigate to the "GPA Target Calculator" section
-2. Enter your:
-   - Current GPA
-   - Current total credits
-   - Target GPA
-   - Upcoming credits
-3. Click "Calculate Required GPA" to see the needed GPA
+## 🌐 Browser Support
 
-## Browser Support
-- Chrome (recommended)
-- Firefox
+- Google Chrome (Recommended)
+- Mozilla Firefox
 - Safari
-- Edge
-- Other modern browsers with ES6 support
+- Microsoft Edge
+- Any modern browser with ES6 support
 
-## Contributing
-Contributions are welcome! Feel free to:
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
+## 🤝 Contributing
+
+Contributions make the open-source community thrive. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Author
-Created by Omar Abbas
+## 📄 License
 
-## License
-MIT License - feel free to use and modify for your needs!
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📧 Contact
+
+Omar Abbas - [@GitHub](https://github.com/Omar7001-B)
+
+Project Link: [https://github.com/Omar7001-B/gpa-calc](https://github.com/Omar7001-B/gpa-calc)
+
+---
+<div align="center">
+  Made with ❤️ by Omar Abbas
+</div>
 
