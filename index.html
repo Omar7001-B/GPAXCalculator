@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">GPA Calculator</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#gpa-calculator">GPA Calculator</a></li>
+                <li><a href="#gpa-planner">GPA Target Calculator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="calculator-section active">
+            <h1>Welcome to GPA Calculator</h1>
+            <div class="home-content">
+                <div class="feature-card">
+                    <h2>GPA Calculator</h2>
+                    <p>Calculate your current GPA by entering your courses, credit hours, and grades.</p>
+                    <a href="#gpa-calculator" class="btn primary">Calculate GPA</a>
+                </div>
+                <div class="feature-card">
+                    <h2>GPA Target Calculator</h2>
+                    <p>Plan your future academic goals by calculating the GPA needed to reach your target.</p>
+                    <a href="#gpa-planner" class="btn primary">Calculate Target GPA</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GPA Calculator Section -->
+        <section id="gpa-calculator" class="calculator-section">
+            <h1>GPA Calculator</h1>
+            <div class="calculator-grid">
+                <!-- Left Section - Grading Scale -->
+                <div class="grading-scale">
+                    <h2>Grading Scale</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Grade</th>
+                                <th>GPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>4.0</td>
+                            </tr>
+                            <tr>
+                                <td>A-</td>
+                                <td>3.7</td>
+                            </tr>
+                            <tr>
+                                <td>B+</td>
+                                <td>3.3</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>3.0</td>
+                            </tr>
+                            <tr>
+                                <td>B-</td>
+                                <td>2.7</td>
+                            </tr>
+                            <tr>
+                                <td>C+</td>
+                                <td>2.3</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>2.0</td>
+                            </tr>
+                            <tr>
+                                <td>C-</td>
+                                <td>1.7</td>
+                            </tr>
+                            <tr>
+                                <td>D+</td>
+                                <td>1.3</td>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>1.0</td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>0.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Right Section - Calculator Form -->
+                <div class="calculator-form">
+                    <form id="gpaForm">
+                        <div id="courseInputs">
+                            <div class="course-row">
+                                <input type="text" placeholder="Course Name (optional)" class="course-name">
+                                <input type="number" placeholder="Credit Hours" class="credit-hours" required min="0"
+                                    step="0.5">
+                                <select class="grade" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="4.0">A</option>
+                                    <option value="3.7">A-</option>
+                                    <option value="3.3">B+</option>
+                                    <option value="3.0">B</option>
+                                    <option value="2.7">B-</option>
+                                    <option value="2.3">C+</option>
+                                    <option value="2.0">C</option>
+                                    <option value="1.7">C-</option>
+                                    <option value="1.3">D+</option>
+                                    <option value="1.0">D</option>
+                                    <option value="0.0">F</option>
+                                </select>
+                                <button type="button" class="remove-course">×</button>
+                            </div>
+                        </div>
+                        <button type="button" id="addCourse" class="btn">Add Course</button>
+                        <button type="submit" class="btn primary">Calculate GPA</button>
+                    </form>
+                    <div id="gpaResult" class="result-section">
+                        <h3>Your GPA: <span id="calculatedGPA">0.00</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GPA Target Calculator Section -->
+        <section id="gpa-planner" class="calculator-section">
+            <h1>GPA Target Calculator</h1>
+            <div class="planner-description">
+                <p>Use this calculator to determine the GPA needed in your upcoming courses to achieve your target
+                    cumulative GPA.</p>
+            </div>
+            <div class="planner-form">
+                <form id="plannerForm">
+                    <div class="form-group">
+                        <label for="currentGPA">Current GPA:</label>
+                        <input type="number" id="currentGPA" required min="0" max="4" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="targetGPA">Target GPA:</label>
+                        <input type="number" id="targetGPA" required min="0" max="4" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="currentCredits">Current Credits:</label>
+                        <input type="number" id="currentCredits" required min="0" step="0.5">
+                    </div>
+                    <div class="form-group">
+                        <label for="additionalCredits">Additional Credits:</label>
+                        <input type="number" id="additionalCredits" required min="0" step="0.5">
+                    </div>
+                    <button type="submit" class="btn primary">Calculate Required GPA</button>
+                </form>
+                <div id="plannerResult" class="result-section">
+                    <h3>Required GPA: <span id="requiredGPA">0.00</span></h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
