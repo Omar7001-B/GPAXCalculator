@@ -1,13 +1,35 @@
-# GPA Xcelerator
+# GPA Calculator
 
-A Python script to calculate the current GPA and determine the required GPA for the next term to achieve a target cumulative GPA.
+A modern, responsive web application for calculating and planning your Grade Point Average (GPA).
 
 ## Features
 
-- Calculate current GPA based on a list of subjects with credit hours and scores.
-- Determine the required GPA for the next term to reach a target cumulative GPA.
+### 1. GPA Calculator
+- Calculate your current GPA by entering course information
+- Dynamic addition and removal of courses
+- Support for standard letter grades (A to F)
+- Automatic GPA computation based on credit hours and grades
 
-## Installation
+### 2. GPA Target Calculator
+- Calculate the required GPA for future courses
+- Input your current GPA and credits
+- Set target cumulative GPA
+- Determine the GPA needed in upcoming courses
+
+### 3. User Interface
+- Clean, modern design
+- Responsive layout for all devices
+- Interactive navigation with browser history support
+- Real-time form validation
+- Reference grading scale table
+
+## Technologies Used
+- HTML5
+- CSS3 (with CSS Variables)
+- Vanilla JavaScript
+- SVG for icons
+
+## Getting Started
 
 1. Clone the repository:
 
@@ -16,42 +38,37 @@ A Python script to calculate the current GPA and determine the required GPA for 
     cd GPA-Xcelerator
     ```
 
+2. Open `index.html` in your web browser
+
+No additional setup or dependencies required!
+
 ## Usage
 
-1. Edit the `subjects` list in `gpa_calculator.py` with your subjects, credit hours, and scores.
+### Calculating Current GPA
+1. Navigate to the "GPA Calculator" section
+2. Enter your course information:
+   - Course name (optional)
+   - Credit hours
+   - Grade received
+3. Add more courses using the "Add Course" button
+4. Click "Calculate GPA" to see your GPA
 
-    ```python
-    subjects = [
-        {"name": "Math", "creditHours": 3, "score": "A"},
-        {"name": "History", "creditHours": 4, "score": "B+"},
-        {"name": "Science", "creditHours": 2, "score": 3.7},
-    ]
-    ```
+### Planning Target GPA
+1. Navigate to the "GPA Target Calculator" section
+2. Enter your:
+   - Current GPA
+   - Current total credits
+   - Target GPA
+   - Upcoming credits
+3. Click "Calculate Required GPA" to see the needed GPA
 
-2. Set your target GPA and the credit hours for the next term:
+## Browser Support
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Other modern browsers with ES6 support
 
-    ```python
-    target_gpa = 3.72
-    next_term_credits = 18
-    ```
-
-3. Run the script:
-
-    ```sh
-    python gpa_calculator.py
-    ```
-
-4. The script will output your current GPA and the required GPA for the next term:
-
-    ```sh
-    Total Points: 22.1
-    Total Credit Hours: 6
-    Current GPA: 3.68
-    To achieve a cumulative GPA of 3.72, you need a GPA of 3.75 in the next term of 18 credit hours.
-    ```
-
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
+## License
+MIT License - feel free to use and modify for your needs!
 
