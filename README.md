@@ -16,6 +16,7 @@
 ## 📋 Table of Contents
 - [Overview](#overview)
 - [Features](#features)
+- [Calculators](#calculators)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Usage Guide](#usage-guide)
@@ -30,22 +31,10 @@ GPA Calc is a comprehensive web application designed to help students track and 
 - Calculate their current GPA
 - Plan future academic goals
 - Track credit hours
+- Predict future GPA
 - Determine required performance for target GPAs
 
 ## ✨ Features
-
-### GPA Calculator
-- 🔢 Real-time GPA computation
-- ➕ Dynamic course management
-- 📝 Support for standard letter grades (A to F)
-- 🔄 Automatic calculations based on credit hours
-- 💾 Browser history support for easy navigation
-
-### Target GPA Planner
-- 🎯 Calculate required future performance
-- 📊 Credit hour planning
-- 🔍 Instant feedback on goals
-- 📈 Academic progress tracking
 
 ### User Experience
 - 🎨 Clean, modern interface
@@ -53,6 +42,31 @@ GPA Calc is a comprehensive web application designed to help students track and 
 - ⚡ Real-time validation
 - 📑 Reference grading scale
 - 🖱️ Intuitive navigation
+- 💾 Browser history support
+- 🔄 Dynamic calculations
+
+## 🧮 Calculators
+
+### 1. GPA Calculator
+- Calculate current GPA from courses
+- Dynamic course management
+- Support for standard letter grades (A to F)
+- Automatic calculations based on credit hours
+- Real-time GPA computation
+
+### 2. Target GPA Calculator
+- Set target cumulative GPA
+- Input current credits and GPA
+- Calculate required GPA for future courses
+- Plan academic goals effectively
+- Instant feedback on targets
+
+### 3. Next GPA Calculator
+- Predict future cumulative GPA
+- Input estimated performance
+- Calculate expected GPA after upcoming courses
+- Track academic progress
+- Plan course strategies
 
 ## 🛠️ Tech Stack
 
@@ -87,7 +101,7 @@ No build process or dependencies required - it just works!
 4. View your calculated GPA instantly
 
 ### Target GPA Planning
-1. Go to "GPA Target Calculator"
+1. Go to "Target GPA Calculator"
 2. Enter your academic data:
    ```
    Current GPA
@@ -96,6 +110,17 @@ No build process or dependencies required - it just works!
    Planned Credits
    ```
 3. Get instant feedback on required performance
+
+### Next GPA Prediction
+1. Access "Next GPA Calculator"
+2. Enter your information:
+   ```
+   Current GPA
+   Current Credits
+   Estimated Next GPA
+   Additional Credits
+   ```
+3. View your predicted cumulative GPA
 
 ## 🌐 Browser Support
 
