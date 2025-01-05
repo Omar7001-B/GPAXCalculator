@@ -16,7 +16,8 @@
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#gpa-calculator">GPA Calculator</a></li>
-                <li><a href="#gpa-planner">GPA Target Calculator</a></li>
+                <li><a href="#gpa-planner">Target GPA Calculator</a></li>
+                <li><a href="#next-gpa">Next GPA Calculator</a></li>
             </ul>
         </div>
     </nav>
@@ -32,9 +33,14 @@
                     <a href="#gpa-calculator" class="btn primary">Calculate GPA</a>
                 </div>
                 <div class="feature-card">
-                    <h2>GPA Target Calculator</h2>
+                    <h2>Target GPA Calculator</h2>
                     <p>Plan your future academic goals by calculating the GPA needed to reach your target.</p>
                     <a href="#gpa-planner" class="btn primary">Calculate Target GPA</a>
+                </div>
+                <div class="feature-card">
+                    <h2>Next GPA Calculator</h2>
+                    <p>Calculate your future cumulative GPA based on your estimated performance in upcoming courses.</p>
+                    <a href="#next-gpa" class="btn primary">Calculate Next GPA</a>
                 </div>
             </div>
             <div class="credit">Created By Omar Abbas</div>
@@ -139,9 +145,9 @@
             <div class="credit">Created By Omar Abbas</div>
         </section>
 
-        <!-- GPA Target Calculator Section -->
+        <!-- Target GPA Calculator Section -->
         <section id="gpa-planner" class="calculator-section">
-            <h1>GPA Target Calculator</h1>
+            <h1>Target GPA Calculator</h1>
             <div class="planner-description">
                 <p>Use this calculator to determine the GPA needed in your upcoming courses to achieve your target
                     cumulative GPA.</p>
@@ -168,6 +174,40 @@
                 </form>
                 <div id="plannerResult" class="result-section">
                     <h3>Required GPA: <span id="requiredGPA">0.00</span></h3>
+                </div>
+            </div>
+            <div class="credit">Created By Omar Abbas</div>
+        </section>
+
+        <!-- Next GPA Calculator Section -->
+        <section id="next-gpa" class="calculator-section">
+            <h1>Next GPA Calculator</h1>
+            <div class="planner-description">
+                <p>Calculate what your cumulative GPA will be after achieving your estimated GPA in upcoming courses.
+                </p>
+            </div>
+            <div class="planner-form">
+                <form id="nextGpaForm">
+                    <div class="form-group">
+                        <label for="nextCurrentGPA">Current GPA:</label>
+                        <input type="number" id="nextCurrentGPA" required min="0" max="4" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="estimatedGPA">Estimated Next GPA:</label>
+                        <input type="number" id="estimatedGPA" required min="0" max="4" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="nextCurrentCredits">Current Credits:</label>
+                        <input type="number" id="nextCurrentCredits" required min="0" step="0.5">
+                    </div>
+                    <div class="form-group">
+                        <label for="nextAdditionalCredits">Additional Credits:</label>
+                        <input type="number" id="nextAdditionalCredits" required min="0" step="0.5">
+                    </div>
+                    <button type="submit" class="btn primary">Calculate Next GPA</button>
+                </form>
+                <div id="nextGpaResult" class="result-section">
+                    <h3>Your Next Cumulative GPA: <span id="calculatedNextGPA">0.00</span></h3>
                 </div>
             </div>
             <div class="credit">Created By Omar Abbas</div>

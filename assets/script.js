@@ -1,19 +1,23 @@
 // DOM Elements
 const gpaCalculatorSection = document.getElementById("gpa-calculator");
 const gpaPlannerSection = document.getElementById("gpa-planner");
+const nextGpaSection = document.getElementById("next-gpa");
 const homeSection = document.getElementById("home");
 const gpaForm = document.getElementById("gpaForm");
 const plannerForm = document.getElementById("plannerForm");
+const nextGpaForm = document.getElementById("nextGpaForm");
 const courseInputs = document.getElementById("courseInputs");
 const addCourseBtn = document.getElementById("addCourse");
 const calculatedGPA = document.getElementById("calculatedGPA");
 const requiredGPA = document.getElementById("requiredGPA");
+const calculatedNextGPA = document.getElementById("calculatedNextGPA");
 
 // Page titles for each section
 const pageTitles = {
   home: "GPA Calculator",
-  "gpa-calculator": "Calculate Your GPA",
-  "gpa-planner": "GPA Target Calculator",
+  "gpa-calculator": "GPA Calculator",
+  "gpa-planner": "Target GPA Calculator",
+  "next-gpa": "Next GPA Calculator",
 };
 
 // Initialize history state
@@ -159,6 +163,39 @@ plannerForm.addEventListener("submit", (e) => {
     requiredGPA.textContent = requiredGPAValue.toFixed(2);
   } else {
     requiredGPA.textContent = "Invalid Input";
+  }
+});
+
+// Calculate Next GPA
+nextGpaForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const currentGPA = parseFloat(
+    document.getElementById("nextCurrentGPA").value
+  );
+  const estimatedGPA = parseFloat(
+    document.getElementById("estimatedGPA").value
+  );
+  const currentCredits = parseFloat(
+    document.getElementById("nextCurrentCredits").value
+  );
+  const additionalCredits = parseFloat(
+    document.getElementById("nextAdditionalCredits").value
+  );
+
+  if (
+    currentGPA >= 0 &&
+    estimatedGPA >= 0 &&
+    currentCredits >= 0 &&
+    additionalCredits > 0
+  ) {
+    const totalPoints =
+      currentGPA * currentCredits + estimatedGPA * additionalCredits;
+    const totalCredits = currentCredits + additionalCredits;
+    const nextCumulativeGPA = totalPoints / totalCredits;
+    calculatedNextGPA.textContent = nextCumulativeGPA.toFixed(2);
+  } else {
+    calculatedNextGPA.textContent = "Invalid Input";
   }
 });
 
